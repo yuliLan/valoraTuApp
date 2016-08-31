@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  
+<script src="lib/ngCordova/dist/ng-cordova.js"></script>
+<script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+</head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+      <ion-content ng-controller="GeoCtrl">
+      <label>PROBANDO LOS PLUGIN DE CORDOVA GEOLOCALIZACION</label><br>
+      <label>-----------------------------------------------</label>
+      <label>-----------///////--------------------------------</label>
+
+      <div> <label>latitud:</label>{{ latitud }}</div>
+      <div><label>longitud:</label>{{ longitud }}</div>
+      <div><label>altura:</label>{{ altura }}</div>
+       <div><label>exactitud:</label>{{ exactitud }}</div>
+       <div><label>altura exacta:</label>{{ alturaExacta }}</div>
+       <div><label>titulo:</label>{{ titulo }}</div>
+       <div><label>velocidad:</label>{{ velocidad }}</div>
+       <div> <label>fecha y hora:</label>{{ fechaHora }}</div>
+       <div>con otro metodo.......</div>
+       <div><label>latitud con witch:</label> {{ lat2 }}</div>
+       <div><label>langitud con witch:</label>{{ long2 }}</div>
+       <div><label>altura con witch::</label>{{ altura2 }}</div>
+       <div><label>exactitud con witch:</label>{{ exactitud2 }}</div>
+       <div><label>altura exacta con witch:</label>{{ alturaExacta2 }}</div>
+       <div><label>titulo con witch:</label>{{ titulo2 }}</div>
+       <div><label>velocidad con witch:</label>{{ velocidad2 }}</div>
+       <div> <label>fecha y hora con witch:</label>{{ fechaHora2 }}</div>
+      
+      
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
